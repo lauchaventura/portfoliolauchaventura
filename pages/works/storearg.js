@@ -6,7 +6,7 @@ import Layout from '../../components/layouts/article'
 
 
 const Work = () => (
-  <Layout title="Inkdrop">
+  <Layout title="StoreARG">
     <Container>
       <Title>
         StoreARG <Badge>2020</Badge>

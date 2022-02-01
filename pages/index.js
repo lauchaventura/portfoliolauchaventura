@@ -10,7 +10,8 @@ import {
   List,
   ListItem,
   Icon,
-  useColorModeValue
+  useColorModeValue,
+  SimpleGrid
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -66,8 +67,7 @@ const Home = () => (
           Sobre mi
         </Heading>
         <Paragraph>
-          Frontend Developer nacido en la Patagonia
-          Argentina con una pasion por el desarrolo web y la visual
+          Frontend Developer formado con una pasion por el desarrollo web y la visual
           de cada sitio/app web.
         </Paragraph>
         <Box align="center" my={4}>
@@ -77,6 +77,7 @@ const Home = () => (
             </Button>
           </NextLink>
         </Box>
+
       </Section>
 
       <Section delay={0.2}>
@@ -103,14 +104,65 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Audio digital, Music,{' '}
+          Audio digital, Musica,{' '}
           <Link color='blue.500' href="https://velezsarsfield.com.ar" target="_blank">
             Velez Sarsfield
           </Link>
 
         </Paragraph>
       </Section>
-
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Mis habilidades
+        </Heading>
+        <SimpleGrid display='flex' p={3} spacing={4} alignItems='center' justifyContent='center'>
+          <Box >
+            <Link href="https://es.reactjs.org/" target="_blank">
+              <Image maxWidth='40px' src='/images/logoreactjs.png' alt='react' />
+            </Link>
+          </Box>
+          <Box>
+            <Link href="https://developer.mozilla.org/es/docs/Web/JavaScript">
+              <Image maxWidth='40px' src='/images/logojavascript.png' alt='react' />
+            </Link>
+          </Box>
+          <Box>
+            <Link href="https://nodejs.org/es/">
+              <Image maxWidth='40px' src='/images/logonodejs.png' alt='react' />
+            </Link>
+          </Box>
+          <Box>
+            <Link href="https://developer.mozilla.org/es/docs/Web/CSS">
+              <Image maxWidth='40px' src='/images/logocss.png' alt='react' />
+            </Link>
+          </Box>
+          <Box>
+            <Link href="https://developer.mozilla.org/es/docs/Web/HTML">
+              <Image maxWidth='36px' src='/images/logohtml.png' alt='react' />
+            </Link>
+          </Box>
+          <Box>
+            <Link href="https://developer.mozilla.org/es/docs/Web/HTML">
+              <Image maxWidth='45px' src='/images/logobootstrap.png' alt='react' />
+            </Link>
+          </Box>
+          <Box>
+            <Link href="https://developer.mozilla.org/es/docs/Web/HTML">
+              <Image maxWidth='45px' src='/images/logosass.png' alt='react' />
+            </Link>
+          </Box>
+          <Box>
+            <Link href="https://developer.mozilla.org/es/docs/Web/HTML">
+              <Image maxWidth='36px' src='/images/logonext.png' alt='react' />
+            </Link>
+          </Box>
+          <Box>
+            <Link href="https://developer.mozilla.org/es/docs/Web/HTML">
+              <Image maxWidth='36px' src='/images/logohtml.png' alt='react' />
+            </Link>
+          </Box>
+        </SimpleGrid>
+      </Section>
       <Section delay={0.3} >
         <Heading as="h3" variant="section-title" >
           Mis redes sociales
@@ -157,8 +209,9 @@ const Home = () => (
 
         </List>
       </Section>
+
     </Container>
-  </Layout>
+  </Layout >
 )
 
 export default Home
