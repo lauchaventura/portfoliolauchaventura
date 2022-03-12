@@ -24,7 +24,7 @@ import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 're
 
 const Home = () => (
   <Layout>
-    <Container>
+    <Container >
       <Box
         borderRadius="lg"
         mb={5}
@@ -110,58 +110,6 @@ const Home = () => (
           </Link>
 
         </Paragraph>
-      </Section>
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Mis habilidades
-        </Heading>
-        <SimpleGrid display='flex' p={3} spacing={4} alignItems='center' justifyContent='center'>
-          <Box >
-            <Link href="https://es.reactjs.org/" target="_blank">
-              <Image maxWidth='40px' src='/images/logoreactjs.png' alt='react' />
-            </Link>
-          </Box>
-          <Box>
-            <Link href="https://developer.mozilla.org/es/docs/Web/JavaScript">
-              <Image maxWidth='40px' src='/images/logojavascript.png' alt='react' />
-            </Link>
-          </Box>
-          <Box>
-            <Link href="https://nodejs.org/es/">
-              <Image maxWidth='40px' src='/images/logonodejs.png' alt='react' />
-            </Link>
-          </Box>
-          <Box>
-            <Link href="https://developer.mozilla.org/es/docs/Web/CSS">
-              <Image maxWidth='40px' src='/images/logocss.png' alt='react' />
-            </Link>
-          </Box>
-          <Box>
-            <Link href="https://developer.mozilla.org/es/docs/Web/HTML">
-              <Image maxWidth='36px' src='/images/logohtml.png' alt='react' />
-            </Link>
-          </Box>
-          <Box>
-            <Link href="https://developer.mozilla.org/es/docs/Web/HTML">
-              <Image maxWidth='45px' src='/images/logobootstrap.png' alt='react' />
-            </Link>
-          </Box>
-          <Box>
-            <Link href="https://developer.mozilla.org/es/docs/Web/HTML">
-              <Image maxWidth='45px' src='/images/logosass.png' alt='react' />
-            </Link>
-          </Box>
-          <Box>
-            <Link href="https://developer.mozilla.org/es/docs/Web/HTML">
-              <Image maxWidth='36px' src='/images/logonext.png' alt='react' />
-            </Link>
-          </Box>
-          <Box>
-            <Link href="https://developer.mozilla.org/es/docs/Web/HTML">
-              <Image maxWidth='36px' src='/images/logohtml.png' alt='react' />
-            </Link>
-          </Box>
-        </SimpleGrid>
       </Section>
       <Section delay={0.3} >
         <Heading as="h3" variant="section-title" >
