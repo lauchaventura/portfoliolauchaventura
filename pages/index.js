@@ -5,13 +5,15 @@ import {
   Heading,
   Box,
   Image,
-
+  Wrap,
+  WrapItem,
   Button,
   List,
   ListItem,
   Icon,
   useColorModeValue,
-  SimpleGrid
+  SimpleGrid,
+  Center
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -24,7 +26,7 @@ import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 're
 
 const Home = () => (
   <Layout>
-    <Container >
+    <Container mt={10}>
       <Box
         borderRadius="lg"
         mb={5}
@@ -111,10 +113,58 @@ const Home = () => (
 
         </Paragraph>
       </Section>
+      <Section delay={0.3}>
+        <Heading as='h3' variant='section-title'>
+          Mis habilidades
+        </Heading>
+        <Wrap spacing='20px' justify='center' align='center' >
+          <WrapItem>
+            <Link href="https://developer.mozilla.org/es/docs/Web/HTML" isExternal>
+              <Image maxWidth='36px' src='/images/logohtml.png' alt='html' />
+            </Link>
+          </WrapItem>
+          <WrapItem>
+            <Link href="https://developer.mozilla.org/es/docs/Web/JavaScript" isExternal>
+              <Image maxWidth='36px' src='/images/logojavascript.png' alt='javascript' />
+            </Link>
+          </WrapItem>
+          <WrapItem>
+            <Link href="https://developer.mozilla.org/es/docs/Web/CSS" isExternal>
+              <Image maxWidth='40px' src='/images/logocss.png' alt='css' />
+            </Link>
+          </WrapItem>
+          <WrapItem>
+            <Link href="https://nodejs.org/" isExternal>
+              <Image maxWidth='45px' src='/images/logonodejs.png' alt='nodejs' />
+            </Link>
+          </WrapItem>
+          <WrapItem>
+            <Link href="https://nextjs.org/" isExternal>
+              <Image maxWidth='40px' src='/images/logonext.png' alt='nextjs' />
+            </Link>
+          </WrapItem>
+          <WrapItem>
+            <Link href="https://getbootstrap.com/" isExternal>
+              <Image maxWidth='45px' src='/images/logobootstrap.png' alt='bootstrap' />
+            </Link>
+          </WrapItem>
+          <WrapItem>
+            <Link href="https://chakra-ui.com/" isExternal>
+              <Image borderRadius={9} maxWidth='40px' src='/images/logochakraui.png' alt='chakraui' />
+            </Link>
+          </WrapItem>
+          <WrapItem>
+            <Link href="https://es.reactjs.org/" isExternal>
+              <Image maxWidth='40px' src='/images/logoreactjs.png' alt='react' />
+            </Link>
+          </WrapItem>
+        </Wrap>
+      </Section>
       <Section delay={0.3} >
         <Heading as="h3" variant="section-title" >
           Mis redes sociales
         </Heading>
+
         <List align='center' >
           <ListItem  >
             <Link href="https://github.com/lauchaventura" target="_blank">
