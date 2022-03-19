@@ -11,9 +11,7 @@ import {
   List,
   ListItem,
   Icon,
-  useColorModeValue,
-  SimpleGrid,
-  Center
+  useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
