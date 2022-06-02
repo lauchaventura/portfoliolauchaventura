@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => (
     <Layout title="Movies LVB">
-        <Container>
+        <Container mt={8}>
             <Title>
                 MoviesLVB <Badge>2021</Badge>
             </Title>

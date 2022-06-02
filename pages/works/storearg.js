@@ -7,7 +7,7 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => (
   <Layout title="StoreARG">
-    <Container>
+    <Container mt={8}>
       <Title>
         StoreARG <Badge>2020</Badge>
       </Title>

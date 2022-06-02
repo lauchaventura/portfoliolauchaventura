@@ -115,7 +115,7 @@ const Home = () => (
         <Heading as='h3' variant='section-title'>
           Mis habilidades
         </Heading>
-        <Wrap spacing='20px' justify='center' align='center' >
+        <Wrap spacing='20px' justify='center' align='center' marginTop={15} >
           <WrapItem>
             <Link href="https://developer.mozilla.org/es/docs/Web/HTML" isExternal>
               <Image maxWidth='36px' src='/images/logohtml.png' alt='html' />

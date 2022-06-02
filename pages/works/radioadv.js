@@ -6,37 +6,40 @@ import Layout from '../../components/layouts/article'
 
 
 const Work = () => (
-    <Layout title="Poke API">
+    <Layout title="Radio Agua de Vida">
         <Container mt={8}>
             <Title>
-                PokeAPI <Badge>2021</Badge>
+                Radio Agua de Vida <Badge>EN CONSTRUCCION</Badge>
             </Title>
             <P>
-                Despliegue de pokemones en general y
-                tambien con un filtro para cada personaje.
+                El fin de la creacion es poder mejorar la visualizacion de cada detalle,
+                agregando apartados de donacion, programacion y grilla. Poder ver en
+                detalle cada programa y su horario
+
             </P>
             <List ml={4} my={4}>
                 <ListItem>
                     <Meta>Sitio Web</Meta>
-                    <Link href="https://pokeapiok.netlify.app/">
-                        PokeAPI <ExternalLinkIcon mx="2px" />
+                    <Link href="https://radioadv.vercel.app/">
+                        Radio Agua de Vida <ExternalLinkIcon mx="2px" />
                     </Link>
                 </ListItem>
                 <ListItem>
                     <Meta>Repositorio</Meta>
-                    <Link href="https://github.com/lauchaventura/pokemon-api">
+                    <Link href="https://github.com/lauchaventura/radioadv">
                         GitHub <ExternalLinkIcon mx="2px" />
                     </Link>
                 </ListItem>
                 <ListItem>
                     <Meta>Herramientas</Meta>
-                    <span>NodeJS, CSS Modules, Nextjs</span>
+                    <span>NodeJS, ChakraUI, Nextjs</span>
                 </ListItem>
 
 
             </List>
 
-            <WorkImage src="/images/works/pokeapi.jpeg" alt="Inkdrop" />
+            <WorkImage src="/images/works/radioadv.jpeg" alt="Radio Agua de Vida" />
+            <WorkImage src="/images/works/radioadv2.jpeg" alt="Radio Agua de Vida" />
         </Container>
     </Layout>
 )
